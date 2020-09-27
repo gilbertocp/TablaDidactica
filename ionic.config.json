@@ -1,5 +1,7 @@
 {
   "name": "Tabla didactica",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

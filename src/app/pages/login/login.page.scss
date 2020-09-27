@@ -1,0 +1,39 @@
+
+.header {
+  font-size: 26px;
+  display: absolute ;
+  top: 0;
+}
+
+.header__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login {
+  margin: 36px;
+  border-radius: 26px;
+  border: 1px solid red; 
+  padding: 10px;
+}
+
+.login__img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer {
+  font-size: 19px;
+  background-color: transparent;
+  display: fixed;
+  border: 1px solid red;
+  bottom: 0;
+}
+
+.footer__text {
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+}

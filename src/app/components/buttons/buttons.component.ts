@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { IdiomasService } from '../../services/idiomas.service';
 
 @Component({
   selector: 'app-buttons',
@@ -7,26 +9,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ButtonsComponent implements OnInit {
 
-  temaActual: string = null;
-  idioma: string = 'Español';
-
-  constructor() { 
+  constructor(
+    private router: Router,
+    private idiomaService: IdiomasService
+  ) { 
   
   }
 
-  ngOnInit() {
-    console.log('Tema actual => '+this.temaActual)
-    console.log('Idioma => '+this.idioma)
+  ngOnInit() {  
+    console.log(this.idiomaService.getIdioma);
   }
-
 
   cambiarIdioma(idioma: string) {
-    console.log('Cambiando a ' + idioma);
-    this.idioma = idioma;
+    this.idiomaService.setIdioma = idioma;
   }
 
-  cambiarTema(tema: string) {
-    this.temaActual = tema;
-    console.log('Cambiando tema a ' + tema);
+  cambiarRuta(ruta: string) {
+    this.router.navigate(['/' + ruta]);
   }
 }

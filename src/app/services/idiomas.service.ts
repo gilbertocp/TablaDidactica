@@ -7,16 +7,20 @@ export class IdiomasService {
 
   private idioma: string;
 
-  constructor(idioma: string = 'es') { 
+  constructor() { 
+    this.idioma = 'es';
+  }
+
+  get getIdioma() {
+    return this.idioma;
+  }
+
+  set setIdioma(idioma: string) {
     this.idioma = idioma;
   }
 
   private urlAudios(directorio: string, entidad: string): string {
     return `assets/audio/${this.idioma}/${directorio}/${entidad}.mp3`;
-  }
-
-  cambiarIdioma(idioma: string): void {
-    this.idioma = idioma;
   }
 
   proveerAudioNumeros(entidad: string): string {

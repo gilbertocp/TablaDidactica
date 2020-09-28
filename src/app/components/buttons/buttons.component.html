@@ -1,0 +1,33 @@
+<ion-fab vertical="bottom" horizontal="end" slot="fixed">
+  <ion-fab-button color="secondary">
+    <ion-icon name="book-outline"></ion-icon>
+  </ion-fab-button>
+  <ion-fab-list side="top">
+    <ion-fab-button color="light" (click)="cambiarTema('Animales')">
+      <img src="assets/img/jirafa.png" width="50" height="50" alt="English">
+    </ion-fab-button>
+    <ion-fab-button color="light" (click)="cambiarTema('Numeros')">
+      <img src="assets/img/dos.png" width="50" height="50" alt="English">
+    </ion-fab-button>
+    <ion-fab-button color="light" (click)="cambiarTema('Paleta')">
+      <img src="assets/img/paleta.png" width="50" height="50" alt="English">
+    </ion-fab-button>
+  </ion-fab-list>
+</ion-fab>
+
+<ion-fab vertical="bottom" horizontal="start" slot="fixed">
+  <ion-fab-button color="tertiary">
+    <ion-icon name="language-sharp"></ion-icon>
+  </ion-fab-button>
+  <ion-fab-list side="top">
+    <ion-fab-button color="light" (click)="cambiarIdioma('Ingles')">
+      <img src="assets/img/eeuu.png" width="50" height="50" alt="English">
+    </ion-fab-button>
+    <ion-fab-button color="light" (click)="cambiarIdioma('Portugues')">
+      <img src="assets/img/portugal.png" width="50" height="50" alt="English">
+    </ion-fab-button>
+    <ion-fab-button color="light" (click)="cambiarIdioma('Espaniol')">
+      <img src="assets/img/espaniol.png" width="50" height="50" alt="English">
+    </ion-fab-button>
+  </ion-fab-list>
+</ion-fab>

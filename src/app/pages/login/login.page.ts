@@ -22,6 +22,9 @@ export class LoginPage implements OnInit {
   ) { }
 
   ngOnInit() {
+    if(this.authSvc.isLogged())
+      this.router.navigate(['/dashboard']);
+
   }
 
   async onLogin() {
@@ -29,7 +32,7 @@ export class LoginPage implements OnInit {
       this.spinner = !this.spinner; 
       const cred = await this.authSvc.login(this.email, this.password);
       localStorage.setItem('user_cred_token', JSON.stringify(cred));
-      this.router.navigate(['/home']);
+      this.router.navigate(['/home/dashboard']);
     } catch (err) {
       console.log(err);
       let errMsj = '';

@@ -1,0 +1,15 @@
+<ion-content fullscreen color="dark">
+  <div class="secciones">
+    <ion-button class="secciones__item" color="warning" (click)="this.router.navigate(['/numeros'])">
+      <img src="assets/img/dos.png" width="100" height="150" alt="Numeros">
+    </ion-button>
+    <ion-button class="secciones__item" color="secondary" (click)="this.router.navigate(['/colores'])">
+      <img src="assets/img/paleta.png" width="150" height="150"  alt="Colores">
+    </ion-button>
+    <ion-button class="secciones__item" color="success" (click)="this.router.navigate(['/animales'])">
+      <img src="assets/img/jirafa.png" width="150" height="150" alt="Animales">
+    </ion-button>
+  </div>
+  <app-buttons></app-buttons>
+</ion-content>
+<app-buttons></app-buttons>

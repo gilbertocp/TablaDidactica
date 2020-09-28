@@ -1,0 +1,13 @@
+.secciones {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.secciones__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:100%;
+  width: 100%;
+}

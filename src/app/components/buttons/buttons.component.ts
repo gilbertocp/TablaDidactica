@@ -7,16 +7,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ButtonsComponent implements OnInit {
 
-  constructor() { }
+  temaActual: string = null;
+  idioma: string = 'Español';
 
-  ngOnInit() {}
+  constructor() { 
+  
+  }
+
+  ngOnInit() {
+    console.log('Tema actual => '+this.temaActual)
+    console.log('Idioma => '+this.idioma)
+  }
 
 
   cambiarIdioma(idioma: string) {
     console.log('Cambiando a ' + idioma);
+    this.idioma = idioma;
   }
 
   cambiarTema(tema: string) {
+    this.temaActual = tema;
     console.log('Cambiando tema a ' + tema);
   }
 }

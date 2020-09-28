@@ -1,3 +1,16 @@
+<ion-header >
+  <ion-toolbar color="warning">
+    <ion-buttons slot="start">
+      <ion-back-button 
+        defaultHref="dashboard"
+        text=""
+        icon="log-out-outline"
+      >
+    </ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
 <ion-content fullscreen color="dark">
   <div class="secciones">
     <ion-button class="secciones__item" color="warning" (click)="this.router.navigate(['/numeros'])">
@@ -10,6 +23,5 @@
       <img src="assets/img/jirafa.png" width="150" height="150" alt="Animales">
     </ion-button>
   </div>
-  <app-buttons></app-buttons>
-</ion-content>
+  </ion-content>
 <app-buttons></app-buttons>

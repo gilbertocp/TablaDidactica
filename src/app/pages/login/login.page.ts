@@ -32,7 +32,7 @@ export class LoginPage implements OnInit {
       this.spinner = !this.spinner; 
       const cred = await this.authSvc.login(this.email, this.password);
       localStorage.setItem('user_cred_token', JSON.stringify(cred));
-      this.router.navigate(['/home/dashboard']);
+      this.router.navigate(['/dashboard']);
     } catch (err) {
       console.log(err);
       let errMsj = '';

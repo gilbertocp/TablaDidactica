@@ -1,0 +1,14 @@
+.numeros {
+  display: flex;
+  flex-direction: column;
+  height: 93vh;
+}
+
+.numeros__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:100%;
+  width: 100%;
+  border: 1px solid black;
+}

@@ -1,12 +1,9 @@
 <ion-header >
   <ion-toolbar color="warning">
     <ion-buttons slot="start">
-      <ion-back-button 
-        defaultHref="dashboard"
-        text=""
-        icon="log-out-outline"
-      >
-    </ion-back-button>
+      <ion-button (click)="logout()">
+        <ion-icon name="log-out-outline"></ion-icon>
+    </ion-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>

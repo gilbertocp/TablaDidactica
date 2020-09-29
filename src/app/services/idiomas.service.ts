@@ -31,7 +31,7 @@ export class IdiomasService {
     return this.urlAudios('colores', entidad);
   }
 
-  proveerAudioAnimale(entidad: string): string {
+  proveerAudioAnimales(entidad: string): string {
     return this.urlAudios('animales', entidad);
   }
 } 

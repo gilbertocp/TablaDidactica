@@ -1,7 +1,7 @@
 .colores {
   display: flex;
   flex-direction: column;
-  height: 93vh;
+  height: 93.5vh;
 }
 
 .colores__item {
@@ -11,4 +11,29 @@
   height:100%;
   width: 100%;
   border: 1px solid black;
+  font-size: 90px;
+}
+
+.colores__item:active {
+  opacity: 0.6;
+}
+
+.colores__item:nth-child(1) {
+  background-color: yellow;
+}
+
+.colores__item:nth-child(2) {
+  background-color: blue;
+}
+
+.colores__item:nth-child(3) {
+  background-color: purple;
+}
+
+.colores__item:nth-child(4) {
+  background-color: orange;
+}
+
+.colores__item:nth-child(5) {
+  background-color: red;
 }

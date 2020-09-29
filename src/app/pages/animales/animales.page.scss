@@ -1,7 +1,7 @@
 .animales {
   display: flex;
   flex-direction: column;
-  height: 93vh;
+  height: 93.5vh;
 }
 
 .animales__item {
@@ -11,4 +11,29 @@
   height:100%;
   width: 100%;
   border: 1px solid black;
+}
+
+.animales__item:active {
+  opacity: 0.6;
+}
+
+.animales__item:nth-child(1) {
+  background-color: red;
+}
+
+.animales__item:nth-child(2) {
+  background-color: greenyellow;
+}
+
+.animales__item:nth-child(3) {
+  background-color: purple;
+}
+
+.animales__item:nth-child(4) {
+  background-color: green;
+}
+
+.animales__item:nth-child(5) {
+  background-color: yellow;
+
 }

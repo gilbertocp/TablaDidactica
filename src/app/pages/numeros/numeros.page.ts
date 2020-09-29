@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { IdiomasService } from '../../services/idiomas.service';
 
 @Component({
   selector: 'app-numeros',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NumerosPage implements OnInit {
 
-  constructor() { }
+  constructor(public idiomaService: IdiomasService) { }
 
   ngOnInit() {
   }

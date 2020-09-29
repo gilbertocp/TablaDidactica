@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { IdiomasService } from '../../services/idiomas.service';
 
 @Component({
   selector: 'app-colores',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ColoresPage implements OnInit {
 
-  constructor() { }
+  constructor(public idiomaService: IdiomasService) { }
 
   ngOnInit() {
   }

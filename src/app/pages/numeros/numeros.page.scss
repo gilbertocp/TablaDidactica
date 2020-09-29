@@ -1,7 +1,7 @@
 .numeros {
   display: flex;
   flex-direction: column;
-  height: 93vh;
+  height: 94vh;
 }
 
 .numeros__item {
@@ -11,4 +11,31 @@
   height:100%;
   width: 100%;
   border: 1px solid black;
+  color: black;
+  font-size: 56px;
+}
+
+
+.numeros__item:active {
+  opacity: 0.6;
+}
+
+.numeros__item:nth-child(1) {
+  background-color: yellow;
+}
+
+.numeros__item:nth-child(2) {
+  background-color: blue;
+}
+
+.numeros__item:nth-child(3) {
+  background-color: purple;
+}
+
+.numeros__item:nth-child(4) {
+  background-color: orange;
+}
+
+.numeros__item:nth-child(5) {
+  background-color: red;
 }

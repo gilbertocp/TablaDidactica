@@ -1,24 +1,32 @@
 <app-header></app-header>
 
 <ion-content>
-  <div class="numeros" expand="block">
-    <ion-button class="numeros__item">
-      <img src="" alt="">
-    </ion-button>
-  
-    <ion-button class="numeros__item">
-      <img src="" alt="">
-    </ion-button>
-    <ion-button class="numeros__item">
-      <img src="" alt="">
-    </ion-button>
-    <ion-button class="numeros__item">
-      <img src="" alt="">
-    </ion-button>
-    <ion-button class="numeros__item">
-      <img src="" alt="">
-    </ion-button>
-    </div>
+  <ion-list class="numeros"> 
+    <button class="numeros__item" (click)="audioCinco.play()">
+      <span>5</span>
+      <audio [src]="idiomaService.proveerAudioNumeros('cinco')" #audioCinco></audio>
+    </button>
+
+    <button class="numeros__item" (click)="audioNueve.play()">
+      <span>9</span>
+      <audio [src]="idiomaService.proveerAudioNumeros('nueve')" #audioNueve></audio>
+    </button>
+
+    <button class="numeros__item" (click)="audioOcho.play()">
+      <span>8</span>
+      <audio [src]="idiomaService.proveerAudioNumeros('ocho')" #audioOcho></audio>
+    </button>
+
+    <button class="numeros__item" (click)="audioSeis.play()">
+      <span>6</span>
+      <audio [src]="idiomaService.proveerAudioNumeros('seis')" #audioSeis></audio>
+    </button>
+
+    <button class="numeros__item" (click)="audioUno.play()">
+      <span>1</span>
+      <audio [src]="idiomaService.proveerAudioNumeros('uno')" #audioUno></audio>
+    </button>
+  </ion-list>
 </ion-content>
 
 <app-buttons></app-buttons>

@@ -1,32 +1,7 @@
 <app-header></app-header>
 
 <ion-content>
-  <ion-list class="colores"> 
-    <button class="colores__item" (click)="audioAmarillo.play()">
-      <ion-icon name="play-outline"></ion-icon>
-      <audio [src]="idiomaService.proveerAudioColores('amarillo')" #audioAmarillo></audio>
-    </button>
 
-    <button class="colores__item" (click)="audioAzul.play()">
-      <ion-icon name="play-outline"></ion-icon>
-      <audio [src]="idiomaService.proveerAudioColores('azul')" #audioAzul></audio>
-    </button>
-
-    <button class="colores__item" (click)="audioMorado.play()">
-      <ion-icon name="play-outline"></ion-icon>
-      <audio [src]="idiomaService.proveerAudioColores('morado')" #audioMorado></audio>
-    </button>
-
-    <button class="colores__item" (click)="audioNaranja.play()">
-      <ion-icon name="play-outline"></ion-icon>
-      <audio [src]="idiomaService.proveerAudioColores('naranja')" #audioNaranja></audio>
-    </button>
-
-    <button class="colores__item" (click)="audioRojo.play()">
-      <ion-icon name="play-outline"></ion-icon> 
-      <audio [src]="idiomaService.proveerAudioColores('rojo')" #audioRojo></audio>
-    </button>
-  </ion-list>
 </ion-content>
 
 <app-buttons></app-buttons>

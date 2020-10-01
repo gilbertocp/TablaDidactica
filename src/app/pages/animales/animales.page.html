@@ -1,29 +1,7 @@
 <app-header></app-header>
 
-<ion-content color="dark">
-  <ion-list class="animales" expand="block">
-    <button class="animales__item" color="secondary" (click)="audioCerdo.play()">
-      <img src="assets/img/animales/cerdo.png" alt="cerdo" width="150" height="110">
-      <audio [src]="idiomaService.proveerAudioAnimales('cerdo')" #audioCerdo></audio>
-    </button>
-  
-    <button class="animales__item"  color="tertiary" (click)="audioGato.play()">
-      <img src="assets/img/animales/gato.png" alt="gato" width="150" height="110">
-      <audio [src]="idiomaService.proveerAudioAnimales('gato')" #audioGato></audio>
-    </button>
-    <button class="animales__item"  color="primary" (click)="audioJirafa.play()">
-      <img src="assets/img/animales/jirafa.png" alt="jirafa" width="150" height="110">
-      <audio [src]="idiomaService.proveerAudioAnimales('jirafa')" #audioJirafa></audio>
-    </button>
-    <button class="animales__item"  color="light" (click)="audioOso.play()">
-      <img src="assets/img/animales/oso.png" alt="oso" width="150" height="110">
-      <audio [src]="idiomaService.proveerAudioAnimales('oso')" #audioOso></audio>
-    </button>
-    <button class="animales__item" color="success" (click)="audioPerro.play()">
-      <img src="assets/img/animales/perro.png" alt="perro" width="110" height="120">
-      <audio [src]="idiomaService.proveerAudioAnimales('perro')" #audioPerro></audio>
-    </button>
-    </ion-list>
+<ion-content>
+  <app-buttons-table></app-buttons-table>
 </ion-content>
 
 <app-buttons></app-buttons>

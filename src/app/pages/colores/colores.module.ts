@@ -9,6 +9,7 @@ import { ColoresPageRoutingModule } from './colores-routing.module';
 import { ColoresPage } from './colores.page';
 import { ButtonsComponent } from '../../components/buttons/buttons.component';
 import { HeaderComponent } from '../../components/header/header.component';
+import { ButtonsTableComponent } from '../../components/buttons-table/buttons-table.component';
 
 @NgModule({
   imports: [
@@ -20,7 +21,8 @@ import { HeaderComponent } from '../../components/header/header.component';
   declarations: [
     ColoresPage,
     ButtonsComponent,
-    HeaderComponent
+    HeaderComponent,
+    ButtonsTableComponent
   ]
 })
 export class ColoresPageModule {}

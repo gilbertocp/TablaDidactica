@@ -13,4 +13,7 @@ export class NumerosPage implements OnInit {
   ngOnInit() {
   }
 
+  reproducir(el: HTMLAudioElement) {
+    el.paused? el.play(): el.pause();
+  }
 }

@@ -9,6 +9,7 @@ import { NumerosPageRoutingModule } from './numeros-routing.module';
 import { NumerosPage } from './numeros.page';
 import { ButtonsComponent } from '../../components/buttons/buttons.component';
 import { HeaderComponent } from '../../components/header/header.component';
+import { ButtonsTableComponent } from '../../components/buttons-table/buttons-table.component';
 
 @NgModule({
   imports: [
@@ -18,6 +19,7 @@ import { HeaderComponent } from '../../components/header/header.component';
     NumerosPageRoutingModule
   ],
   declarations: [NumerosPage,ButtonsComponent,
-    HeaderComponent]
+    ButtonsTableComponent,
+    HeaderComponent, ]
 })
 export class NumerosPageModule {}

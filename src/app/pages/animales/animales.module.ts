@@ -9,6 +9,7 @@ import { AnimalesPageRoutingModule } from './animales-routing.module';
 import { AnimalesPage } from './animales.page';
 import { HeaderComponent } from '../../components/header/header.component';
 import { ButtonsComponent } from '../../components/buttons/buttons.component';
+import { ButtonsTableComponent } from '../../components/buttons-table/buttons-table.component';
 
 @NgModule({
   imports: [
@@ -20,7 +21,8 @@ import { ButtonsComponent } from '../../components/buttons/buttons.component';
   declarations: [
     AnimalesPage,
     ButtonsComponent,
-    HeaderComponent
+    HeaderComponent,
+    ButtonsTableComponent
   ]
 })
 export class AnimalesPageModule {}

@@ -12,31 +12,31 @@ export class AnimalesPage implements OnInit {
     {
       nombre:  'cerdo',
       urlImg: 'assets/img/animales/cerdo.png',
-      color: 'primary',
+      color: '#01bc87',
       tipo: 'animales'
     },
     {
       nombre:  'gato',
       urlImg: 'assets/img/animales/gato.png',
-      color: 'secondary',
+      color: '#0194bc',
       tipo: 'animales'
     },
     {
       nombre:  'jirafa',
       urlImg: 'assets/img/animales/jirafa.png',
-      color: 'tertiary',
+      color: '#01b9bc',
       tipo: 'animales'
     },
     {
       nombre:  'oso',
       urlImg: 'assets/img/animales/oso.png',
-      color: 'danger',
+      color: '#bc019a',
       tipo: 'animales'
     },
     {
       nombre:  'perro',
       urlImg: 'assets/img/animales/perro.png',
-      color: 'warning',
+      color: '#015cbc',
       tipo: 'animales'
     }
   ]

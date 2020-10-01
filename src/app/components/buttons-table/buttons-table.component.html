@@ -1,12 +1,17 @@
 <div class="entidad">
-  <ion-button 
-      expand="full" 
-      [color]="obj.color" 
+  <div  
       class="entidad__item" 
       *ngFor="let obj of entidades; let i = index" 
+      [style.backgroundColor]="obj.color? obj.color: 'black'"
       [id]="i" 
-      (click)="idiomasSvc.proveerAudio(obj.tipo, obj.nombre)"
+      (click)="reproducirAudio(idiomasSvc.proveerAudio(obj.tipo, obj.nombre))"
       >
-    <img [src]="obj.urlImg" alt="" class="entidad__img" > 
-  </ion-button>
+    <img *ngIf="obj.urlImg else etiqueta" [src]="obj.urlImg" alt="" class="entidad__img" > 
+
+    <ng-template #etiqueta>
+      <span style="text-align: center; font-size: 55px;">
+        {{obj.etiqueta}}
+      </span>
+    </ng-template>
+  </div>
 </div>

@@ -14,14 +14,11 @@ export class ButtonsTableComponent implements OnInit {
 
   constructor(public idiomasSvc: IdiomasService) { }
 
-  ngOnInit() { console.log(this.entidades) }
+  ngOnInit() {  }
 
   reproducirAudio(url: string): void {
     const audio = new Howl({
-      src: url,
-      onend: () => {
-        console.log('Terminó de reproducir')
-      }
+      src: url
     });
 
     audio.play();

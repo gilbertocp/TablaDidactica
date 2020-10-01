@@ -7,11 +7,17 @@
 }
 
 .entidad__item {
-  height: 100%;
+  text-align: center;
+  padding: 10px;
+}
+
+.entidad__item:hover {
+  opacity: 0.8;
 }
 
 .entidad__img {
-  position: absolute;
-  height: 100%;
+  margin: 0 auto;
+  height: 100px;
+  width: 100px;
 }
 

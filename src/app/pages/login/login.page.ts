@@ -27,6 +27,13 @@ export class LoginPage implements OnInit {
 
   }
 
+  invitadoLogin(btnSubmit) {
+    this.email = 'invitado@invitado.com';
+    this.password = '222222';
+
+    btnSubmit.el.click();
+  }
+
   async onLogin() {
     try {
       this.spinner = !this.spinner; 

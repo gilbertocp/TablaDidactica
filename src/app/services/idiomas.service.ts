@@ -23,15 +23,7 @@ export class IdiomasService {
     return `assets/audio/${this.idioma}/${directorio}/${entidad}.mp3`;
   }
 
-  proveerAudioNumeros(entidad: string): string {
-    return this.urlAudios('numeros', entidad);
-  }
-
-  proveerAudioColores(entidad: string): string {
-    return this.urlAudios('colores', entidad);
-  }
-
-  proveerAudioAnimales(entidad: string): string {
-    return this.urlAudios('animales', entidad);
+  proveerAudio(tipo: string ,entidad: string): string {
+    return this.urlAudios(tipo, entidad);
   }
 } 

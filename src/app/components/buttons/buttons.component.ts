@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { Router } from '@angular/router';
+import { emit } from 'process';
 import { IdiomasService } from '../../services/idiomas.service';
 
 @Component({

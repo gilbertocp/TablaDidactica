@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Entidad } from '../../classes/Entidad';
+import { IdiomasService } from '../../services/idiomas.service';
+import {Howl, Howler} from 'howler';
 
 @Component({
   selector: 'app-buttons-table',
@@ -7,8 +10,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ButtonsTableComponent implements OnInit {
 
-  constructor() { }
+  @Input() entidades: Entidad[];
 
-  ngOnInit() {}
+  constructor(public idiomasSvc: IdiomasService) { }
+
+  ngOnInit() { console.log(this.entidades) }
+
+  reproducirAudio(url: string): void {
+    const audio = new Howl({
+      src: url,
+      onend: () => {
+        console.log('Terminó de reproducir')
+      }
+    });
+
+    audio.play();
+  }
 
 }

@@ -1,0 +1,17 @@
+.entidad {
+  height: 94.5%;
+  display: grid;
+  margin: 0;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 1fr);
+}
+
+.entidad__item {
+  height: 100%;
+}
+
+.entidad__img {
+  position: absolute;
+  height: 100%;
+}
+

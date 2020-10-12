@@ -4,7 +4,6 @@ import { Platform } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
 
-import { timer } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -27,7 +26,7 @@ export class AppComponent {
       this.statusBar.styleDefault();
       this.splashScreen.hide();
 
-      timer(8000).subscribe(() => this.showSplash = false); 
+      setTimeout(() => this.showSplash = false, 3000);
     });
   }
 }

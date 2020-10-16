@@ -1,7 +1,8 @@
 <ion-content color="primary" [fullscreen]="true">
   <div class="header" color="primary">
     <div class="header__title">
-      <ion-text class="header__text">Tabla Didáctica</ion-text>
+      <ion-text class="header__text">Tabla Didáctica</ion-text> &nbsp;
+      <img src="/assets/icon.png" alt="" width="25" height="25">
     </div>
   </div>
 
@@ -34,11 +35,23 @@
 
           <ion-row>
             <ion-col size="6">
-              <ion-button color="tertiary" expand="block" (click)="invitadoLogin(btnSubmit)">Invitado</ion-button>
+              <ion-button color="success" expand="block" id="invitado" (click)="logginButtons($event)">Invitado</ion-button>
             </ion-col>
 
             <ion-col size="6">
-              <ion-button color="danger" expand="block">Admin</ion-button>
+              <ion-button color="success" id="admin" (click)="logginButtons($event)" expand="block">Admin</ion-button>
+            </ion-col>
+
+            <ion-col size="6">
+              <ion-button color="secondary" id="anonimo" expand="block" (click)="logginButtons($event)">Anonimo</ion-button>
+            </ion-col>
+
+            <ion-col size="6">
+              <ion-button color="secondary" id="tester" expand="block" (click)="logginButtons($event)">Tester</ion-button>
+            </ion-col>
+
+            <ion-col size="12">
+              <ion-button color="dark" id="usuario" expand="block" (click)="logginButtons($event)">Usuario</ion-button>
             </ion-col>
           </ion-row>
         </ion-grid>

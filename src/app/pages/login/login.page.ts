@@ -27,13 +27,6 @@ export class LoginPage implements OnInit {
 
   }
 
-  invitadoLogin(btnSubmit) {
-    this.email = 'invitado@invitado.com';
-    this.password = '222222';
-
-    btnSubmit.el.click();
-  }
-
   async onLogin() {
     try {
       this.spinner = !this.spinner; 
@@ -70,6 +63,37 @@ export class LoginPage implements OnInit {
       this.spinner = !this.spinner;
     }
   } 
+
+  logginButtons(e: Event): void {
+    const id = (e.currentTarget as HTMLButtonElement).id;
+      
+    switch(id) {
+      case 'invitado':
+        this.email = 'invitado@invitado.com';
+        this.password = '222222';
+      break;
+
+      case 'admin':
+        this.email = 'admin@admin.com';
+        this.password = '111111';
+      break;  
+
+      case 'usuario':
+        this.email = 'usuario@usuario.com';
+        this.password = '333333';
+      break;
+
+      case 'anonimo':
+        this.email = 'anonimo@anonimo.com';
+        this.password = '444444';
+      break;
+
+      case 'tester':
+        this.email = 'tester@tester.com';
+        this.password = '555555';
+      break;
+    }
+  }
 
   async displayErrorToast(msj: string) {
     const toast = await this.toastController.create({
